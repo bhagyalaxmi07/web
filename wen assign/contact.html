@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Bhagyalaxmi</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fdf7f2;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+
+        header nav a:hover {
+            color: blue;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+
+        section h1 {
+            font-size: 36px;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background-color: white;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: black;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .contact-form textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .contact-form button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: darkblue;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f7ede2;
+            font-size: 14px;
+            color: gray;
+        }
+
+        footer .footer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .social-links a {
+            margin: 0 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Bhagyalaxmi / Student</div>
+        <nav>
+            <a href="index.html">ABOUT ME</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section>
+        <h1>Let's talk</h1>
+        <form class="contact-form" action="#" method="POST">
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Built by: Bhagyalaxmi</p>
+        <div class="footer-container">
+            <div>Call: 123-456-7890</div>
+            <div>Write: <a href="mail@gmail.com">mail@gmail.com</a></div>
+            <div class="social-links">
+                Follow:
+                <a href="#" target="_blank">Facebook</a> |
+                <a href="#" target="_blank">Twitter</a> |
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
